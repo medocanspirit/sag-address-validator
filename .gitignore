@@ -1,0 +1,41 @@
+# Development
+node_modules/
+.vite/
+coverage/
+*.log
+.env
+.env.*
+.DS_Store
+
+# Build
+/dist
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+__tests__/
+*.test.*
+*.spec.*
+
+# Development files
+src/App.tsx
+src/main.tsx
+index.html
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+tsconfig.app.json
+.eslintrc
+postcss.config.js
+tailwind.config.js
+
+# Source maps
+*.map
+
+# Cache
+.cache/
+.npm/
