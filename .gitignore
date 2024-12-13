@@ -7,9 +7,6 @@ coverage/
 .env.*
 .DS_Store
 
-# Build
-/dist
-
 # Editor
 .vscode/
 .idea/
