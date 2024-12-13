@@ -1,6 +1,6 @@
 # SAG Address Validator
 
-A React component for address validation and normalization using the [https://www.sortandgroup.com/](Sort&Group) API.
+A React component for address validation and normalization using the [Sort&Group Solutions](https://www.sortandgroup.com/) API.
 
 ## GitHub installation
 
@@ -50,7 +50,7 @@ function MyForm() {
 
 ## Props
 
-| Name          | Type                                      | Description      |
+| Name          | Type                                      | Default          | Description                                                    |
 | ------------- | ----------------------------------------- | ---------------- | -------------------------------------------------------------- |
 | value         | Address                                   | -                | Address object including street, postal code, city and country |
 | onChange      | (address: Address) => void                | -                | Callback invoked on address modification                       |
@@ -62,7 +62,6 @@ function MyForm() {
 | countryFormat | 'code' \| 'name'                          | code             | Country value format                                           |
 | language      | 'en' \| 'fr' \| 'es'                      | en               | Language                                                       |
 | apiKey        | string                                    | undefined        | API Key                                                        |
-| displayScore  | boolean                                   | false            | Display the address carbon footprint score (API key required ) |
 
 ## Countries
 
@@ -109,27 +108,15 @@ interface Country {
 
 ### API key
 
-You'll need a valid [https://www.sortandgroup.com/](Sort&Group) API key to enable some features and bypass request limits.
+You'll need a valid [Sort&Group API key](https://www.sortandgroup.com/) to bypass request limits.
 
-```tsx
-<AddressValidator apiKey="your-api-key" />
-```
-
-#### Restricted features
-
-- Display carbon footprint score
-
-### i18n
+### I18n
 
 This package is internationalized, French, English and Spanish are available.
 
-```tsx
-<AddressValidator language="fr" />
-```
-
 ## Customization
 
-You can style the default elements with your respective classes
+You can style the default elements with your respective classes :
 
 ```tsx
 const customClassNames = {
@@ -145,7 +132,6 @@ const customClassNames = {
   normalizedTitle: 'custom-class',
   errorMessage: 'custom-class',
   useButton: 'custom-class',
-  score: 'custom-class',
 };
 
 function MyForm() {
