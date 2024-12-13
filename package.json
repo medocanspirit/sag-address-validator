@@ -7,7 +7,9 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "dev": "vite",
@@ -16,15 +18,6 @@
     "preview": "vite preview",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint && npm run build"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
   },
   "peerDependencies": {
     "react": "^18.0.0",
@@ -69,5 +62,14 @@
   "bugs": {
     "url": "https://github.com/medocanspirit/sag-address-validator/issues"
   },
-  "homepage": "https://github.com/medocanspirit/sag-address-validator#readme"
+  "homepage": "https://github.com/medocanspirit/sag-address-validator#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
 }
